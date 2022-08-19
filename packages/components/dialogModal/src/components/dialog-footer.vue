@@ -15,7 +15,7 @@
   </show-button>
 </template>
 <script lang="ts" setup>
-import { showButton } from 'src/components'
+import { showButton } from '@packages/components'
 import { useExtraDialog } from '../hooks'
 import { DialogExtraProps, DialogExtraEmits } from '../types/dialog-extra-type'
 const props = defineProps(DialogExtraProps)

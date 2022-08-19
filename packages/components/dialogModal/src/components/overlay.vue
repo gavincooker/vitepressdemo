@@ -17,7 +17,7 @@
 </template>
 <script lang="ts" setup>
 import { definePropType } from '../tokens'
-import { useNamespace } from 'src/hooks'
+import { useNamespace } from '@packages/hooks'
 defineProps({
   mask: {
     type: Boolean,
@@ -48,8 +48,8 @@ const ns = useNamespace('overlay')
 </script>
 
 <style lang="scss" scoped>
-@import 'src/utils/bem/mixins.scss';
-@import 'src/utils/bem/config.scss';
+@import '@packages/utils/bem/mixins.scss';
+@import '@packages/utils/bem/config.scss';
 
 @include b(overlay) {
   position: fixed;

@@ -1,4 +1,4 @@
-import { useNamespace } from 'docs/src/hooks'
+import { useNamespace } from '@packages/hooks'
 import { CSSProperties, ComputedRef, InjectionKey, PropType, Ref } from 'vue'
 export type DialogContext = {
   style: ComputedRef<CSSProperties>

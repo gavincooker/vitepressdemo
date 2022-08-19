@@ -18,7 +18,7 @@ export default defineConfig({
         replacement: `${path.resolve(__dirname, '../lib')}/`,
       },
       {
-        find: '@xsComponents',
+        find: '@packages',
         replacement: `${path.resolve(__dirname, '../packages')}/`,
       },
     ],
