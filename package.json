@@ -1,0 +1,32 @@
+{
+  "name": "vitepressdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs --port 9581"
+  },
+  "devDependencies": {
+    "@vue/tsconfig": "^0.1.3",
+    "@types/node": "^17.0.21",
+    "sass": "^1.54.3",
+    "typescript": "^4.7.4",
+    "vitepress": "^1.0.0-alpha.4",
+    "prismjs": "^1.28.0",
+    "escape-html": "^1.0.3",
+    "vite-plugin-inspect": "^0.6.0",
+    "vite": "^3.0.7",
+    "unplugin-vue-define-options": "^0.9.1"
+  },
+  "dependencies": {
+    "@vueuse/core": "^9.1.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-container": "^3.0.0",
+    "prism-theme-vars": "^0.2.4",
+    "vue": "^3.2.37"
+  },
+  "author": "",
+  "license": "ISC"
+}
