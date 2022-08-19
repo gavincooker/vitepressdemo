@@ -13,7 +13,7 @@ export default (): UserConfig => {
           replacement: `${path.resolve(__dirname, './.vitepress')}/`,
         },
         {
-          find: '@xsComponents',
+          find: '@packages',
           replacement: `${path.resolve(projRoot, 'packages')}/`,
         },
       ],
