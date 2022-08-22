@@ -9,7 +9,7 @@ export default (): UserConfig => {
     resolve: {
       alias: [
         {
-          find: '~/',
+          find: '@docConfig/',
           replacement: `${path.resolve(__dirname, './.vitepress')}/`,
         },
         {

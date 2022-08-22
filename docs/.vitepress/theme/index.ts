@@ -1,9 +1,9 @@
 import DefaultTheme from 'vitepress/theme';
 import type { Theme } from 'vitepress';
 
-import Demo from '~/components/v-demo.vue';
-import '~/styles/vars.css';
-import '~/styles/app.scss';
+import Demo from '@docConfig/components/v-demo.vue';
+import '@docConfig/styles/vars.css';
+import '@docConfig/styles/app.scss';
 
 import packages from '@packages/index';
 import '@packages/theme-default/index.scss';

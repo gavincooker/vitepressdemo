@@ -1,5 +1,5 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
@@ -13,10 +13,11 @@
     "skipLibCheck": true,
     "types": ["../typings/vue-shim"],
     "typeRoots": ["../typings/vue-shim"],
+    "baseUrl": "./",
     "paths": {
-      "@packages/*": ["../packages/"],
-      "~/*": ["./.vitepress/"]
+      "@packages/*": ["../packages/*"],
+      "@docConfig/*": ["./.vitepress/*"]
     }
   },
-  "include": ["**/*", ".vitepress/**/*"]
+  "include": [".vitepress/**/*"]
 }
