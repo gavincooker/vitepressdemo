@@ -10,6 +10,6 @@ export const nav = [
   },
   {
     text: 'GitHub',
-    link: 'https://github.com/SuperCuteXiaoSi/xiaosiCommitLib',
+    link: 'https://github.com/vuejs/vitepress',
   },
 ]
