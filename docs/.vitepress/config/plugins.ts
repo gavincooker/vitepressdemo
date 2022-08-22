@@ -34,7 +34,6 @@ export const mdPlugin = (md: markdownit) => {
 				// 匹配demo字符串，并截取demo后面的描述
 				const m = tokens[idx].info.trim().match(/^demo\s*(.*)$/)
 				const description = m && m.length > 1 ? m[1] : ''
-				console.log('tokens:', tokens)
 				// 从token流获取容器内容块
 				const sourceFileToken = tokens[idx + 2]
 				let source = ''

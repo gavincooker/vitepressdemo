@@ -5,7 +5,11 @@
     "jsx": "preserve",
     "lib": ["ESNext", "Dom"],
     "types": ["unplugin-vue-define-options"],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@packages/*": ["./packages/*"]
+    }
   },
   "include": ["packages/*"],
   "exclude": ["node_modules", "dist", "*.js", "lib", "build"]

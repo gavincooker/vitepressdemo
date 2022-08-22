@@ -19,8 +19,5 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "experimentalDecorators": true,
-    "paths": {
-      "@packages/*": ["./packages/*"]
-    }
   }
 }
