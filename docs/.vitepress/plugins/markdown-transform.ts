@@ -12,6 +12,8 @@ export function MarkdownTransform(): Plugin {
       if (!id.endsWith('.md')) return;
 
       const componentId = path.basename(id, '.md');
+      // filter docs/index.md transform, avoid destroy theme layout.
+      if (componentId === 'index') return;
 
       const append: Append = {
         headers: [],
