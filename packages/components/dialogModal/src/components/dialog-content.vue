@@ -49,6 +49,7 @@ const { style, ns } = inject(dialogInjectionKey)!
     display: flex;
     margin-bottom: 20px;
     justify-content: space-between;
+    border-bottom: 1px solid #777;
   }
   @include e(body) {
     margin-bottom: 20px;

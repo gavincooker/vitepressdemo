@@ -29,18 +29,11 @@ The content of Dialog can be anything, even a table or a form. This example show
 
 The `header` slot can be used to customize the area where the title is displayed. In order to maintain accessibility, use the `title` attribute in addition to using this slot, or use the `titleId` slot property to specify which element should be read out as the dialog title.
 
-:::demo
-
-dialog/customization-header
-
-:::
 ## Centered content
 
 Dialog's content can be centered.
 
 :::demo Setting `center` to `true` will center dialog's header and footer horizontally. `center` only affects Dialog's header and footer. The body of Dialog can be anything, so sometimes it may not look good when centered. You need to write some CSS if you wish to center the body as well.
-
-dialog/centered-content
 
 :::
 

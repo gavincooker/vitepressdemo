@@ -8,10 +8,6 @@ function getDemoSidebar() {
           link: '/components/button',
         },
         {
-          text: 'admin',
-          link: '/components/admin',
-        },
-        {
           text: 'dialog',
           link: '/components/dialog'
         }
