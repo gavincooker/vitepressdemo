@@ -1,10 +1,12 @@
 import type { UserConfig } from 'vitepress';
 import { nav, sidebar, mdPlugin, algolia } from './config/index'
-
+const IS_PROD = process.env.NODE_ENV === 'production'
+const baseUrl = IS_PROD ? '/vitepressdemo/' : '/'
 const config: UserConfig = {
   lang: 'zh-CN',
   title: 'vitepress demo doc',
   description: 'Just playing around.',
+  base: baseUrl,
   themeConfig: {
     logo: '/logo2.png',
     // 展示搜索框
