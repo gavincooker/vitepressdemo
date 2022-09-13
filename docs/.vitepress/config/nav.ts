@@ -10,7 +10,7 @@ export const nav = [
   },
   {
     text: '关于',
-    link: '/write/about',
+    link: '/writing/about',
   },
   {
     text: 'GitHub',

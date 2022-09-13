@@ -1,7 +1,6 @@
 # vitepressdemo 项目总览
-
 ### 项目技术栈
-
+![An image](../public/vitepresscompose.png)
 ```
     vite + vue + md
 ```
