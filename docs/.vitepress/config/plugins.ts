@@ -30,6 +30,7 @@ export const mdPlugin = (md: markdownit) => {
 		},
 		// 容器渲染处理
 		render(tokens, idx) {
+			debugger
 			if (tokens[idx].nesting === 1) {
 				// 匹配demo字符串，并截取demo后面的描述
 				const m = tokens[idx].info.trim().match(/^demo\s*(.*)$/)

@@ -17,10 +17,6 @@ const config: UserConfig = {
   },
   markdown: {
     config: (md: markdownit) => mdPlugin(md),
-    // config: (md) => {
-    // 	// const { demoBlockPlugin } = require('vitepress-theme-demoblock')
-    // 	// md.use(demoBlockPlugin)
-    // },
   },
 };
 

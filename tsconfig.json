@@ -2,6 +2,6 @@
   "files": [],
   "references": [
     { "path": "./tsconfig.web.json" },
-    { "path": "./tsconfig.effect.json" }
+    { "path": "./tsconfig.develop.json" }
   ]
 }

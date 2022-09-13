@@ -9,6 +9,10 @@ export const nav = [
     activeMatch: '/components/',
   },
   {
+    text: '关于',
+    link: '/write/about',
+  },
+  {
     text: 'GitHub',
     link: 'https://github.com/vuejs/vitepress',
   },

@@ -45,3 +45,6 @@ code {
 div[class*='language-'] {
   background-color: var(--code-bg-color) !important;
 }
+.vp-doc [class*='language-'] > button.copy {
+  background-color: var(--code-bg-color) !important;
+}

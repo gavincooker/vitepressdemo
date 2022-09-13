@@ -1,9 +1,5 @@
 <script setup lang="ts">
 defineProps({
-	file: {
-		type: String,
-		required: true,
-	},
 	demo: {
 		type: Object,
 		required: true,
