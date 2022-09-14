@@ -1,3 +1,17 @@
+# qa
+```
+vitepress是什么?
+	静态网站生成器
+vitepress特点/为何使用？
+	使用md文件来编写、组织文档，文档路由易配置，提供默认网站主题，起网站迅速。可通过在md文件中使用vue组件，来编写组件库文档。
+vitepress迅速原因？
+	vitepress在vite基础上搭建
+vite特点？
+	启动快，根据请求按需加载模块。区别于webpack。vite的server模块提供该逻辑。
+	vite提供hook以供外部配置plugin、server
+vite与vitepress间的联动？
+	vite有自身的plugin，vitepress提供自身的plugin给vite统一配置。在plugin中可以通过提供的约定方法hook，提供配置server、配置server中间件、转换不同格式的模块、提供网站入口页面等功能。
+```
 # vitepressdemo 项目总览
 ### 项目技术栈
 ![An image](../public/vitepresscompose.png)
