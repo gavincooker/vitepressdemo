@@ -135,3 +135,43 @@ deploy branch 设置提供 server 的 branch，存放构建完的 dist 目录文
 ### 自动部署
 
 通过官方提供的 github workflow 脚本实现, 提交更改后执行部署。
+
+
+### 项目心得（22.9.16）：
+```
+	alias
+@theme/index -> c:// theme/index.js
+	
+handle request:
+	resolve:
+		/@fs/c://client/app/index.js -> c://client/app/index.js
+	load:
+		read file
+	transform:
+		transform import [url] to /@fs/[url] or node_modules/[url]
+		
+		vue 
+		-> 
+		"/node_modules/.vite/deps/vue.js?v=23be0ae3"(url/module map id)
+		"C:/Users/EDZ/Desktop/vitepress/docs/node_modules/.vite/deps/vue.js?v=23be0ae3"(resolveId)
+		
+		@theme/index
+		->
+		"/@fs/C:/Users/EDZ/Desktop/vitepress/dist/client/theme-default/index.js"(url/ module map id)
+		"C:/Users/EDZ/Desktop/vitepress/dist/client/theme-default/index.js" (resolveId)
+		
+		./util.js
+		->
+		"/@fs/C:/Users/EDZ/Desktop/vitepress/dist/client/app/utils.js"
+		"C:/Users/EDZ/Desktop/vitepress/dist/client/app/utils.js"
+		
+alias plugin:
+	使用自定义的别名plugin（如有），处理别名，根据别名获取实际的文件路径
+import plugin：
+	转换源文件内的import文件路径，对存在的import的fs文件路径前面加上，转为合法的url（/@fs/或/node_modules/)以发起合法的request；
+resolve plugin:
+	处理/@fs/或.开头的相对路径
+	
+一个request对应一个入口文件，解析入口url的同时，会对入口源文件内所有的路径引入，做与入口文件相同的resolve、load、transform步骤。
+当入口文件资源全部load完全时，执行客户端ui的逻辑，根据路径url找到对应的md文档，并发起http请求http://localhost:5173/index.md?import&t=1663325460567 ，访问入口页文档
+```
