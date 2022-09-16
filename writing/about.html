@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/vitepressdemo/assets/style.6b89da3e.css">
     <link rel="modulepreload" href="/vitepressdemo/assets/chunks/VPAlgoliaSearchBox.1bfb8271.js">
     <link rel="modulepreload" href="/vitepressdemo/assets/app.90aac30d.js">
-    <link rel="modulepreload" href="/vitepressdemo/assets/writing_about.md.079595d2.lean.js">
+    <link rel="modulepreload" href="/vitepressdemo/assets/writing_about.md.11907350.lean.js">
     
     <script id="check-dark-light">(()=>{const e=localStorage.getItem("vitepress-theme-appearance"),a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
   </head>
@@ -82,8 +82,43 @@
 <span class="line"><span style="color:#A6ACCD;">&quot;/@fs/C:/Users/EDZ/Desktop/vitepress/dist/client/app/router.js&quot;(&quot;./router.js&quot;)</span></span>
 <span class="line"><span style="color:#A6ACCD;">&quot;/@fs/C:/Users/EDZ/Desktop/vitepress/dist/client/app/data.js&quot;(&quot;./data.js&quot;)</span></span>
 <span class="line"><span style="color:#A6ACCD;">&quot;/@fs/C:/Users/EDZ/Desktop/vitepress/dist/client/app/composables/head.js&quot;(&quot;./composables/head.js&quot;)</span></span>
-<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h1 id="github-page-部署心得：" tabindex="-1">github page 部署心得： <a class="header-anchor" href="#github-page-部署心得：" aria-hidden="true">#</a></h1><h3 id="创建-github-同名仓库-repo" tabindex="-1">创建 github 同名仓库[repo] <a class="header-anchor" href="#创建-github-同名仓库-repo" aria-hidden="true">#</a></h3><p>形如<code>[name]/github.io</code>。 name 为 github username，每个账户仅有一个，用作 github page 个人域名。 该仓库文件可通过<code>[name]/github.io/</code>url 访问, 一般不存放。转为为每个仓库做部署.</p><h3 id="每一个仓库拥有在线访问地址" tabindex="-1">每一个仓库拥有在线访问地址 <a class="header-anchor" href="#每一个仓库拥有在线访问地址" aria-hidden="true">#</a></h3><p>访问<code>[name]/github.io/账户下的仓库名</code></p><h3 id="repo-setting-为仓库设置访问分支" tabindex="-1">repo-&gt;setting 为仓库设置访问分支 <a class="header-anchor" href="#repo-setting-为仓库设置访问分支" aria-hidden="true">#</a></h3><p>deploy branch 设置提供 server 的 branch，存放构建完的 dist 目录文件</p><h3 id="vitepress-中正式环境设置-baseurl-为仓库名" tabindex="-1">vitepress 中正式环境设置 baseurl 为仓库名 <a class="header-anchor" href="#vitepress-中正式环境设置-baseurl-为仓库名" aria-hidden="true">#</a></h3><p>否则<code>[name]/github.io/账户下的仓库名</code>只访问到 index html, 访问不到包括样式等静态资源。</p><h3 id="自动部署" tabindex="-1">自动部署 <a class="header-anchor" href="#自动部署" aria-hidden="true">#</a></h3><p>通过官方提供的 github workflow 脚本实现, 提交更改后执行部署。</p></div></div></main><!--[--><!--]--><!----><!--[--><!--]--></div></div></div></div></div><!----><!--[--><!--]--></div></div>
-    <script>__VP_HASH_MAP__ = JSON.parse("{\"components_button.md\":\"7001449a\",\"components_dialog.md\":\"a9f82499\",\"index.md\":\"f89063ea\",\"writing_about.md\":\"079595d2\"}")</script>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h1 id="github-page-部署心得：" tabindex="-1">github page 部署心得： <a class="header-anchor" href="#github-page-部署心得：" aria-hidden="true">#</a></h1><h3 id="创建-github-同名仓库-repo" tabindex="-1">创建 github 同名仓库[repo] <a class="header-anchor" href="#创建-github-同名仓库-repo" aria-hidden="true">#</a></h3><p>形如<code>[name]/github.io</code>。 name 为 github username，每个账户仅有一个，用作 github page 个人域名。 该仓库文件可通过<code>[name]/github.io/</code>url 访问, 一般不存放。转为为每个仓库做部署.</p><h3 id="每一个仓库拥有在线访问地址" tabindex="-1">每一个仓库拥有在线访问地址 <a class="header-anchor" href="#每一个仓库拥有在线访问地址" aria-hidden="true">#</a></h3><p>访问<code>[name]/github.io/账户下的仓库名</code></p><h3 id="repo-setting-为仓库设置访问分支" tabindex="-1">repo-&gt;setting 为仓库设置访问分支 <a class="header-anchor" href="#repo-setting-为仓库设置访问分支" aria-hidden="true">#</a></h3><p>deploy branch 设置提供 server 的 branch，存放构建完的 dist 目录文件</p><h3 id="vitepress-中正式环境设置-baseurl-为仓库名" tabindex="-1">vitepress 中正式环境设置 baseurl 为仓库名 <a class="header-anchor" href="#vitepress-中正式环境设置-baseurl-为仓库名" aria-hidden="true">#</a></h3><p>否则<code>[name]/github.io/账户下的仓库名</code>只访问到 index html, 访问不到包括样式等静态资源。</p><h3 id="自动部署" tabindex="-1">自动部署 <a class="header-anchor" href="#自动部署" aria-hidden="true">#</a></h3><p>通过官方提供的 github workflow 脚本实现, 提交更改后执行部署。</p><h3 id="项目心得（22-9-16）：" tabindex="-1">项目心得（22.9.16）： <a class="header-anchor" href="#项目心得（22-9-16）：" aria-hidden="true">#</a></h3><div class="language-"><button class="copy"></button><span class="lang"></span><pre><code><span class="line"><span style="color:#A6ACCD;">	alias</span></span>
+<span class="line"><span style="color:#A6ACCD;">@theme/index -&gt; c:// theme/index.js</span></span>
+<span class="line"><span style="color:#A6ACCD;">	</span></span>
+<span class="line"><span style="color:#A6ACCD;">handle request:</span></span>
+<span class="line"><span style="color:#A6ACCD;">	resolve:</span></span>
+<span class="line"><span style="color:#A6ACCD;">		/@fs/c://client/app/index.js -&gt; c://client/app/index.js</span></span>
+<span class="line"><span style="color:#A6ACCD;">	load:</span></span>
+<span class="line"><span style="color:#A6ACCD;">		read file</span></span>
+<span class="line"><span style="color:#A6ACCD;">	transform:</span></span>
+<span class="line"><span style="color:#A6ACCD;">		transform import [url] to /@fs/[url] or node_modules/[url]</span></span>
+<span class="line"><span style="color:#A6ACCD;">		</span></span>
+<span class="line"><span style="color:#A6ACCD;">		vue </span></span>
+<span class="line"><span style="color:#A6ACCD;">		-&gt; </span></span>
+<span class="line"><span style="color:#A6ACCD;">		&quot;/node_modules/.vite/deps/vue.js?v=23be0ae3&quot;(url/module map id)</span></span>
+<span class="line"><span style="color:#A6ACCD;">		&quot;C:/Users/EDZ/Desktop/vitepress/docs/node_modules/.vite/deps/vue.js?v=23be0ae3&quot;(resolveId)</span></span>
+<span class="line"><span style="color:#A6ACCD;">		</span></span>
+<span class="line"><span style="color:#A6ACCD;">		@theme/index</span></span>
+<span class="line"><span style="color:#A6ACCD;">		-&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">		&quot;/@fs/C:/Users/EDZ/Desktop/vitepress/dist/client/theme-default/index.js&quot;(url/ module map id)</span></span>
+<span class="line"><span style="color:#A6ACCD;">		&quot;C:/Users/EDZ/Desktop/vitepress/dist/client/theme-default/index.js&quot; (resolveId)</span></span>
+<span class="line"><span style="color:#A6ACCD;">		</span></span>
+<span class="line"><span style="color:#A6ACCD;">		./util.js</span></span>
+<span class="line"><span style="color:#A6ACCD;">		-&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">		&quot;/@fs/C:/Users/EDZ/Desktop/vitepress/dist/client/app/utils.js&quot;</span></span>
+<span class="line"><span style="color:#A6ACCD;">		&quot;C:/Users/EDZ/Desktop/vitepress/dist/client/app/utils.js&quot;</span></span>
+<span class="line"><span style="color:#A6ACCD;">		</span></span>
+<span class="line"><span style="color:#A6ACCD;">alias plugin:</span></span>
+<span class="line"><span style="color:#A6ACCD;">	使用自定义的别名plugin（如有），处理别名，根据别名获取实际的文件路径</span></span>
+<span class="line"><span style="color:#A6ACCD;">import plugin：</span></span>
+<span class="line"><span style="color:#A6ACCD;">	转换源文件内的import文件路径，对存在的import的fs文件路径前面加上，转为合法的url（/@fs/或/node_modules/)以发起合法的request；</span></span>
+<span class="line"><span style="color:#A6ACCD;">resolve plugin:</span></span>
+<span class="line"><span style="color:#A6ACCD;">	处理/@fs/或.开头的相对路径</span></span>
+<span class="line"><span style="color:#A6ACCD;">	</span></span>
+<span class="line"><span style="color:#A6ACCD;">一个request对应一个入口文件，解析入口url的同时，会对入口源文件内所有的路径引入，做与入口文件相同的resolve、load、transform步骤。</span></span>
+<span class="line"><span style="color:#A6ACCD;">当入口文件资源全部load完全时，执行客户端ui的逻辑，根据路径url找到对应的md文档，并发起http请求http://localhost:5173/index.md?import&amp;t=1663325460567 ，访问入口页文档</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div></div></div></main><!--[--><!--]--><!----><!--[--><!--]--></div></div></div></div></div><!----><!--[--><!--]--></div></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"components_button.md\":\"7001449a\",\"components_dialog.md\":\"a9f82499\",\"index.md\":\"f89063ea\",\"writing_about.md\":\"11907350\"}")</script>
     <script type="module" async src="/vitepressdemo/assets/app.90aac30d.js"></script>
     
   </body>
